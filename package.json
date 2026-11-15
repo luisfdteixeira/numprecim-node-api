@@ -1,0 +1,51 @@
+{
+  "name": "numprecim-node-api",
+  "version": "1.0.0",
+  "description": "Node API for Price Tracker app NumPrecim",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "db:schema": "tsx src/db/apply-schema.ts",
+    "test": "node --import tsx --test 'src/**/*.test.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisfdteixeira/numprecim-node-api.git"
+  },
+  "keywords": [
+    "price",
+    "tracker",
+    "api",
+    "node",
+    "fastify",
+    "postgresql"
+  ],
+  "author": "Luis Fernando Dias Teixeira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisfdteixeira/numprecim-node-api/issues"
+  },
+  "homepage": "https://github.com/luisfdteixeira/numprecim-node-api#readme",
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "@types/pg": "^8.23.1",
+    "@types/web-push": "^3.6.4",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  },
+  "dependencies": {
+    "axios": "^1.21.1",
+    "cheerio": "^1.2.0",
+    "dotenv": "^18.0.10",
+    "fastify": "^5.12.8",
+    "firebase-admin": "^14.5.1",
+    "pg": "^8.23.1",
+    "web-push": "^4.0.0"
+  }
+}

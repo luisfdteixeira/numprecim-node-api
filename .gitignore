@@ -1,0 +1,33 @@
+# Dependências
+node_modules/
+
+# Build
+dist/
+build/
+
+# Variáveis de ambiente (nunca commitar)
+.env
+.env.local
+.env.*.local
+.env.example
+
+# Credenciais do Firebase (se você baixou o JSON da service account)
+*firebase-adminsdk*.json
+serviceAccountKey.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+.pi/
+docs/*
+
+AGENTS.md
+SPECS.md
