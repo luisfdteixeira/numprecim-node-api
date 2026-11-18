@@ -9,7 +9,6 @@ build/
 .env
 .env.local
 .env.*.local
-.env.example
 
 # Credenciais do Firebase (se você baixou o JSON da service account)
 *firebase-adminsdk*.json
@@ -29,5 +28,8 @@ Thumbs.db
 .pi/
 docs/*
 
+#IA and Agentic config files
 AGENTS.md
 SPECS.md
+skills-lock.json
+.agents/
