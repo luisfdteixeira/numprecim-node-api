@@ -1,15 +1,12 @@
-# NumPrecim - API
+# NumPrecim - Node API
 
-Node.js + Fastify + PostgreSQL (Supabase) API for product price monitoring, with Firebase authentication and web push notifications.
+Node.js + Fastify + PostgreSQL API for product price monitoring, with Firebase authentication and web push notifications.
 
 ![Node.js](https://img.shields.io/badge/Node.js-22+-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Fastify](https://img.shields.io/badge/Fastify-000000?style=for-the-badge&logo=fastify&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Web Push](https://img.shields.io/badge/Web%20Push-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
-![Fly.io](https://img.shields.io/badge/Fly.io-24175B?style=for-the-badge&logo=flydotio&logoColor=white)
 
 ## Stack
 
@@ -21,7 +18,7 @@ Node.js + Fastify + PostgreSQL (Supabase) API for product price monitoring, with
 - Push: `web-push` (VAPID)
 - Cron: protected endpoint `POST /api/jobs/check-prices` + external scheduler (cron-job.org, every 6h)
 
-## How it works
+## Description
 
 1. The frontend authenticates with Firebase and sends the ID Token (`Authorization: Bearer <token>`) on every request.
 2. `POST /api/products` scrapes the page at registration time (422 if no price is found).
@@ -58,7 +55,7 @@ npm run db:schema
 npm run dev
 ``` 
 
-Environment variables: see .env.example (VAPID keys via npx web-push generate-vapid-keys; Firebase via Service Account JSON).
+Environment variables: see .env.example at the root of the project
 
 ### Deploy 
 ```bash
